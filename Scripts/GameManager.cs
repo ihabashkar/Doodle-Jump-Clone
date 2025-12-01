@@ -14,15 +14,15 @@ public class GameManager : MonoBehaviour
         float camHeight = cam.orthographicSize;
         float camWidth = camHeight * cam.aspect;
 
-        float minX = -camWidth * 0.9f;
-        float maxX = camWidth * 0.9f;
+        float minX = -camWidth * 0.8f;
+        float maxX = camWidth * 0.8f;
 
         float lastY = 0f;
 
         for (int i = 0; i < platformCount; i++)
         {
             // vertical spacing tuned for a jumpForce ~10 (reachable but not cramped)
-            float yGap = Random.Range(1.5f, 3.5f);
+            float yGap = Random.Range(1.5f, 2.5f);
             lastY += yGap;
 
             // horizontal spread across full camera width
