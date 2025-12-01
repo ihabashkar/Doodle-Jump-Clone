@@ -1,11 +1,11 @@
-using Systems.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 
-public class PlayerController : MonoBehavior
+public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 10f;
-    public Rigitbody2D rb;
+    public Rigidbody2D rb;
 
     private float moveX;
 
