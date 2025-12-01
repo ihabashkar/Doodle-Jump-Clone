@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collection.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Platform : MonoBehaviour
@@ -11,12 +11,12 @@ public class Platform : MonoBehaviour
     {
         if (collision.relativeVelocity.y <= 0f)
         {
-            Rigidbody2D rb = collision.gameObject.GetCoponent < Rigidbod2D >
+            Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                Vector2 velocity = rb.velocity;
+                Vector2 velocity = rb.linearVelocity;
                 velocity.y = jumpForce;
-                rb.velocity = velocity;
+                rb.linearVelocity = velocity;
             }
         }
     }
