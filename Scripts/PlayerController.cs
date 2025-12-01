@@ -21,8 +21,8 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 velocity = rb.velocity;
+        Vector2 velocity = rb.linearVelocity;
         velocity.x = moveX;
-        rb.velocity = velocity;
+        rb.linearVelocity = velocity;
     }
 }
