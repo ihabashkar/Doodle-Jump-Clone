@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Vector3 spawnPostiion = new Vector3();
+        Vector3 spawnPosition = new Vector3();
 
         for (int i = 0; i < platformCount; i++)
         {
